@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Revenue Management Tool</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
+</head>
+<body>
+<div class="container jumbotron main">
+	<div class="row">
+		<div class='col-sm-12 text-center'>
+			<h2 class="well well-lg"><b>Revenue Management Tool</b></h2>
+			<h5><b>Do you know how competitive your rates are?</b></h5>
+		</div>
+	</div>
+</div>
+<div class="container center">
+	<div class="row">
+		<div class='col-sm-12 text-center well well-lg'>
+			<div class="form-group">
+				<form name="input" action="/cgi-bin/RMT_Webpage.py" method="get">
+					<label>Enter or Select dates here: </label>
+					<input id="datepicker"><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
